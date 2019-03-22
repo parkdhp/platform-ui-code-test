@@ -1,0 +1,24 @@
+li {
+  width: 100%;
+}
+
+p {
+  line-height: 0.3;
+  padding: 0 1rem;
+}
+
+.saveButton {
+  width: 100%;
+  justify-content: center;
+}
+
+.removeButton {
+  background: white;
+  color: black;
+  font-size: 1.5rem;
+  border: 0;
+  position: absolute;
+  z-index: 2;
+  right: 0px;
+  top: 0px;
+}
