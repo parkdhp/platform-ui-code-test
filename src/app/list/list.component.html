@@ -1,4 +1,24 @@
 <div class="list-container">
   <h2>Providers</h2>
+    <h3>Available Providers</h3>
+    <ul class="cards">
+      <app-provider-card 
+        class="card"
+        *ngFor="let provider of unselectedProviders"
+        [provider]="provider"
+        [isSaved]=false
+        (onClick)="saveProvider($event)">
+      </app-provider-card>
+    </ul>
 
+    <h3>Saved Providers</h3>
+    <ul class="cards">
+      <app-provider-card
+        class="card"
+        *ngFor="let provider of selectedProviders"
+        [provider]="provider"
+        [isSaved]=true
+        (onClick)="removeProvider($event)">
+      </app-provider-card>
+    </ul>
 </div>
