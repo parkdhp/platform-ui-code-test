@@ -1,0 +1,7 @@
+<li>
+  <button class="removeButton" *ngIf="isSaved" (click)="sendDataToParent($event)" id={{provider.id}}>&times;</button>
+  <p class="name"><strong>Provider:</strong> {{provider.name}}</p>
+  <p class="address"><strong>Address:</strong> {{provider.address}}</p>
+  <p class="phone"><strong>Phone:</strong> {{phoneNumber}}</p>
+  <button class="saveButton" *ngIf="!isSaved" (click)="sendDataToParent($event)" id={{provider.id}}>Save Provider</button>
+</li>
